@@ -1,0 +1,55 @@
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: var(--radius-tag) var(--radius-tag) 0 0;
+  overflow: hidden;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  cursor: pointer;
+  background: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Main (selected) tab ── */
+.main {
+  color: var(--color-red-dark);
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 0;
+  height: 4px;
+  background: var(--color-red-main);
+  border-radius: 100px;
+}
+
+/* ── Other (unselected) tab ── */
+.other {
+  color: var(--color-black-500);
+}
+
+.other::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  bottom: 0;
+  height: 2px;
+  background: var(--color-black-500);
+  border-radius: 100px;
+}
+
+.otherActive {
+  composes: other;
+}

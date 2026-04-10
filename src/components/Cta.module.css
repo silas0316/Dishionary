@@ -1,0 +1,40 @@
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 326px;
+  padding: 16px;
+  border: none;
+  border-radius: var(--radius-cta);
+  box-shadow: var(--shadow-choice);
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: var(--text-cta-size);
+  line-height: var(--text-cta-line);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--color-red-dark);
+  outline-offset: 3px;
+}
+
+.default {
+  background: var(--color-red-main);
+}
+
+.default:active {
+  background: var(--color-red-dark);
+}
+
+.pressed {
+  background: var(--color-red-dark);
+}
+
+.pressed:active {
+  background: var(--color-red-dark);
+  filter: brightness(0.95);
+}

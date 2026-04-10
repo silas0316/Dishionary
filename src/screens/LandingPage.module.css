@@ -1,0 +1,230 @@
+.root {
+  position: relative;
+  flex: 1;
+  min-height: 100%;
+  background: var(--color-splash-base);
+  overflow-x: hidden;
+}
+
+.texture {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.scroll {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 16px;
+  max-width: var(--mobile-width);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.stepLabel {
+  margin: 0;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 0;
+  border-radius: var(--radius-sheet);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.panelStep2 {
+  composes: panel;
+  gap: 12px;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.titleBlock h2 {
+  margin: 0;
+}
+
+.titleBlock p {
+  margin: 0;
+}
+
+.chipGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.divider {
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-top: 2px dashed var(--color-black-100);
+  opacity: 0.9;
+}
+
+.photoRow {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.photoAction {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border: none;
+  border-radius: var(--radius-cta);
+  background: var(--color-white);
+  cursor: pointer;
+  box-shadow: var(--shadow-choice);
+}
+
+.photoActionUpload {
+  gap: 7px;
+}
+
+.photoAction:active {
+  transform: scale(0.98);
+}
+
+.photoAction:focus-visible {
+  outline: 2px solid var(--color-red-main);
+  outline-offset: 2px;
+}
+
+.iconWrapRed {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-tag);
+  background: var(--color-red-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconWrapGreen {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-tag);
+  background: var(--color-green-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconImg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.photoLabel {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-explanation-size);
+  line-height: var(--text-explanation-line);
+  color: var(--color-black-500);
+  text-align: center;
+}
+
+.photosStrip {
+  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 12px 8px 28px;
+  border-radius: var(--radius-cta);
+  border: 1px solid var(--color-white-2);
+  background: var(--color-white);
+  box-shadow: var(--shadow-choice);
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100px;
+}
+
+.thumbWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  object-fit: cover;
+  background: #d1d1d1;
+  display: block;
+}
+
+.removeBtn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.removeBtn img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.removeBtn:focus-visible {
+  outline: 2px solid var(--color-red-main);
+  outline-offset: 1px;
+}
+
+.photoCount {
+  position: absolute;
+  bottom: 11px;
+  right: 12px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-explanation-size);
+  line-height: var(--text-explanation-line);
+  color: var(--color-black-100);
+}
+
+.ctaFull {
+  max-width: none !important;
+  width: 100%;
+}
+
+.hiddenInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}

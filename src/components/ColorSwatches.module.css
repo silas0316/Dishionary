@@ -1,0 +1,25 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  width: 100%;
+}
+
+.swatch {
+  aspect-ratio: 1;
+  border-radius: var(--radius-tag);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--color-black-300);
+  margin-top: 4px;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

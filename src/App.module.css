@@ -1,0 +1,18 @@
+.shell {
+  width: 100%;
+  max-width: var(--mobile-width);
+  height: 100dvh;
+  margin: 0 auto;
+  background: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}

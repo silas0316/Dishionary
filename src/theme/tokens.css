@@ -1,0 +1,77 @@
+/**
+ * DIshionary design system — derived from Figma file QYXIJdaHO43dgsSiglttPe (Design System node).
+ */
+:root {
+  /* Red */
+  --color-red-dark: #731906;
+  --color-red-main: #f23f19;
+  --color-red-light: #fc8d84;
+  --color-red-tint: #feedec;
+
+  /* Green (Figma variable name uses "mian" typo) */
+  --color-green-dark: #2a400e;
+  --color-green-main: #6b992e;
+  --color-green-light: #8cc63f;
+  --color-green-tint: #d4fdaf;
+
+  /* Neutrals */
+  --color-black-main: #000000;
+  --color-black-500: #2c2c2c;
+  --color-black-300: #6b6b6b;
+  --color-black-100: #9d9d9d;
+  --color-black-50: #f1f1f1;
+  --color-white: #ffffff;
+  --color-white-2: #f4f3f1;
+  --color-white-80: rgba(255, 255, 255, 0.8);
+  --color-white-65: rgba(255, 255, 255, 0.65);
+
+  /* Semantic aliases */
+  --color-text-primary: var(--color-black-500);
+  --color-text-secondary: var(--color-black-300);
+  --color-surface: var(--color-white);
+  --color-surface-muted: var(--color-white-2);
+  /* Start screen base (Figma node 275:2716) — under textured layer */
+  --color-splash-base: #faf9f7;
+
+  /* Radii */
+  --radius-tag: 2px;
+  --radius-cta: 3px;
+  --radius-sheet: 4px;
+
+  /* Shadows */
+  --shadow-cta: 0 1px 2px rgba(0, 0, 0, 0.25);
+  --shadow-tag: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-choice: 0 2px 4px rgba(0, 0, 0, 0.15);
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5);
+
+  /* Typography — Oleo Script + Plus Jakarta Sans */
+  --font-display: "Oleo Script", "Noto Sans Thai", cursive, serif;
+  --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --text-title-size: 44px;
+  --text-title-line: 1.2;
+
+  --text-card-title-size: 24px;
+  --text-card-title-line: 1.4;
+
+  --text-meal-name-size: 32px;
+  --text-meal-name-line: 1.4;
+
+  --text-subtitle-size: 18px;
+  --text-subtitle-line: 1.2;
+
+  --text-body-size: 20px;
+  --text-body-line: 1.4;
+
+  --text-cta-size: 20px;
+  --text-cta-line: 1.2;
+
+  --text-tag-size: 16px;
+  --text-tag-line: 1.2;
+
+  --text-explanation-size: 12px;
+  --text-explanation-line: 1.4;
+
+  /* Mobile frame */
+  --mobile-width: 390px;
+}

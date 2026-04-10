@@ -1,0 +1,36 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 12px;
+  border-radius: var(--radius-tag);
+  box-shadow: var(--shadow-choice);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-tag-size);
+  line-height: var(--text-tag-line);
+  color: var(--color-black-500);
+  background: var(--color-white);
+  border: 2px solid var(--color-white-2);
+  cursor: pointer;
+  transition:
+    transform 0.08s ease,
+    border-color 0.12s ease;
+}
+
+.chip:active {
+  transform: scale(0.98);
+}
+
+.chip:focus-visible {
+  outline: 2px solid var(--color-red-main);
+  outline-offset: 2px;
+}
+
+.redSelected {
+  border: 2px solid var(--color-red-dark);
+}
+
+.greenSelected {
+  border: 2px solid var(--color-green-dark);
+}

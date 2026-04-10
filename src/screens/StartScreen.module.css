@@ -1,0 +1,43 @@
+/**
+ * Start screen — Figma 275:2716.
+ * Typography classes from design system TypographySample.module.css.
+ */
+.root {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-splash-base);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.texture {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: var(--mobile-width);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.content h1,
+.content p {
+  margin: 0;
+}

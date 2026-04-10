@@ -1,0 +1,105 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-title-size);
+  line-height: var(--text-title-line);
+  color: var(--color-black-main);
+}
+
+/** Title with brand accent — start screen / marketing (Figma 275:2716). */
+.titleBrand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-title-size);
+  line-height: var(--text-title-line);
+  color: var(--color-red-main);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-card-title-size);
+  line-height: var(--text-card-title-line);
+  color: var(--color-black-main);
+}
+
+/** Card title on light panels — Figma homepage step 1 (275:2478). */
+.cardTitleMuted {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-card-title-size);
+  line-height: var(--text-card-title-line);
+  color: var(--color-black-500);
+}
+
+.mealTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-meal-name-size);
+  line-height: var(--text-meal-name-line);
+  color: var(--color-black-main);
+}
+
+.subtitle {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--text-subtitle-size);
+  line-height: var(--text-subtitle-line);
+  color: var(--color-black-main);
+}
+
+/** Subtitle on light backgrounds — Figma uses Black/500 for taglines. */
+.subtitleMuted {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--text-subtitle-size);
+  line-height: var(--text-subtitle-line);
+  color: var(--color-black-500);
+}
+
+.body {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  color: var(--color-black-main);
+}
+
+.cta {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: var(--text-cta-size);
+  line-height: var(--text-cta-line);
+  color: var(--color-black-main);
+}
+
+.tag {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--text-tag-size);
+  line-height: var(--text-tag-line);
+  color: var(--color-black-main);
+}
+
+.explanation {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-explanation-size);
+  line-height: var(--text-explanation-line);
+  color: var(--color-black-main);
+}
+
+.explanationMuted {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-explanation-size);
+  line-height: var(--text-explanation-line);
+  color: var(--color-black-300);
+}
