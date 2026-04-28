@@ -2,7 +2,7 @@ import { useState } from "react";
 import typo from "../components/TypographySample.module.css";
 import styles from "./StartScreen.module.css";
 
-const BG_SRC = "/bg-start.png";
+const BG_SRC = `${import.meta.env.BASE_URL}bg-start.png`;
 
 export type StartScreenProps = {
   initialKey?: string;

@@ -1,8 +1,9 @@
 import typo from "../components/TypographySample.module.css";
 import styles from "./LoadingPage.module.css";
 
-const BG_SRC = "/bg-start.png";
-const VIDEO_SRC = "/loading-video.mp4";
+const BG_SRC = `${import.meta.env.BASE_URL}bg-start.png`;
+const VIDEO_SRC = `${import.meta.env.BASE_URL}loading-video.mp4`;
+const LOADING_GIF = `${import.meta.env.BASE_URL}Loading.gif`;
 
 export type LoadingPageProps = {
   status?: string;
@@ -15,7 +16,7 @@ export function LoadingPage({ status }: LoadingPageProps) {
 
       <div className={styles.center}>
         <div className={styles.titleGroup}>
-          <img className={styles.loadingGif} src="/Loading.gif" alt="Loading" />
+          <img className={styles.loadingGif} src={LOADING_GIF} alt="Loading" />
           <p className={`${typo.subtitleMuted} ${styles.tagline}`}>
             {status || "We're reading every dish and uncovering its story."}
           </p>

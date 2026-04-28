@@ -6,7 +6,7 @@ import { TopNavOptions } from "../components/TopNavOptions";
 import type { FinalMenuItem } from "../services/geminiMenuService";
 import styles from "./ResultPage.module.css";
 
-const BG_SRC = "/bg-start.png";
+const BG_SRC = `${import.meta.env.BASE_URL}bg-start.png`;
 
 /* ------------------------------------------------------------------ */
 /*  Allergen keyword mapping                                          */

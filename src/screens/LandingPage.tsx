@@ -5,7 +5,7 @@ import { MultipleChoiceOptions } from "../components/MultipleChoiceOptions";
 import typo from "../components/TypographySample.module.css";
 import styles from "./LandingPage.module.css";
 
-const BG_SRC = "/bg-start.png";
+const BG_SRC = `${import.meta.env.BASE_URL}bg-start.png`;
 
 const ALLERGENS = [
   "Milk",
