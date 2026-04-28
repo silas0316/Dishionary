@@ -8,12 +8,34 @@ import styles from "./App.module.css";
 
 type AppScreen = "start" | "landing" | "loading" | "result";
 
+const KEY_STORAGE = "dishionary.geminiKey";
+
+function readInitialKey(): string {
+  const params = new URLSearchParams(window.location.search);
+  const fromUrl = params.get("key");
+  if (fromUrl) return fromUrl;
+  try {
+    return localStorage.getItem(KEY_STORAGE) ?? "";
+  } catch {
+    return "";
+  }
+}
+
 export default function App() {
   const [appScreen, setAppScreen] = useState<AppScreen>("start");
   const [menuResult, setMenuResult] = useState<FinalMenuItem[]>([]);
   const [loadingStatus, setLoadingStatus] = useState("Loading...");
   const [selectedAllergens, setSelectedAllergens] = useState<string[]>([]);
   const filesRef = useRef<File[]>([]);
+
+  const handleStart = useCallback((apiKey: string) => {
+    try {
+      localStorage.setItem(KEY_STORAGE, apiKey);
+    } catch {
+      /* ignore */
+    }
+    setAppScreen("landing");
+  }, []);
 
   const handleTranslate = useCallback((files: File[], allergens: string[]) => {
     filesRef.current = files;
@@ -36,7 +58,7 @@ export default function App() {
     <div className={styles.shell}>
       <main className={styles.scroll}>
         {appScreen === "start" ? (
-          <StartScreen onContinue={() => setAppScreen("landing")} />
+          <StartScreen initialKey={readInitialKey()} onStart={handleStart} />
         ) : appScreen === "loading" ? (
           <LoadingPage status={loadingStatus} />
         ) : appScreen === "result" ? (

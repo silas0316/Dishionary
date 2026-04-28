@@ -1,7 +1,6 @@
 // ---- Provider config ----
 // Default: Ollama (local). Switch to Gemini via URL: ?provider=gemini&key=YOUR_KEY
 
-const GEMINI_DEFAULT_KEY = "AIzaSyCcJNItkPCxvxhm_maxW3Dg_Ncq-PBGJDo";
 const GEMINI_MODEL = "gemini-2.5-flash";
 const OLLAMA_MODEL = "gemma3:12b";
 const OLLAMA_URL = "/ollama/api/chat";
@@ -18,7 +17,15 @@ function getProvider(): Provider {
 
 function getGeminiKey(): string {
   const params = new URLSearchParams(window.location.search);
-  return params.get("key") || GEMINI_DEFAULT_KEY;
+  const fromUrl = params.get("key");
+  if (fromUrl) return fromUrl;
+  try {
+    const fromStorage = localStorage.getItem("dishionary.geminiKey");
+    if (fromStorage) return fromStorage;
+  } catch {
+    /* localStorage unavailable */
+  }
+  throw new Error("No Gemini API key. Please enter your key on the start screen.");
 }
 
 function getGeminiUrl(): string {
