@@ -70,6 +70,19 @@ Your key is saved only in your own browser (localStorage). It is never sent to a
 
 ---
 
+## Team
+
+A team project by:
+
+- Tiyasha Banerjee
+- Zhan Lou
+- Chia-Le Luan
+- Ying Zhong
+
+With guidance from **Professor Francesco Cafaro**.
+
+---
+
 ## Built with
 
 Designed in Figma, built with [Claude Code](https://claude.com/claude-code).
