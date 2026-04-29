@@ -66,7 +66,7 @@ GOAL:
 
 Return ONLY the formatted lines. No explanations.`;
 
-const instruction_2 = `You are a professional restaurant menu translator.
+const instruction_2 = `You are a professional and multilingual restaurant menu translator.
 
 Your output MUST follow a STRICT LINE FORMAT so it can be parsed by code.
 
@@ -91,7 +91,7 @@ FIELD RULES:
 
 Return ONLY the formatted ITEM lines. No explanations.`;
 
-const instruction_3 = `You are a professional restaurant menu translator and menu content writer.
+const instruction_3 = `You are a professional multilingual restaurant menu translator and menu content writer.
 
 Your output MUST follow a STRICT LINE FORMAT so it can be parsed by code.
 
@@ -110,7 +110,7 @@ FIELD RULES:
 - name_english: copy exactly from input
 
 DESCRIPTION RULES:
-- Write a short, natural menu description in English (max 20 words)
+- Write a short, natural menu description in English (max 25 words)
 
 INGREDIENT RULES:
 - List likely main ingredients only, use "|" to separate
@@ -119,7 +119,7 @@ ALLERGEN RULES:
 - List likely common allergens only, use "|" to separate
 
 STORY RULES:
-- Optional cultural or historical background (max 30 words), use "" if unsure
+- Optional cultural or historical background  or origins (max 35 words), use "" if unsure
 
 Return ONLY the formatted ITEM lines.`;
 
