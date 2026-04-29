@@ -77,7 +77,7 @@ A team project by:
 - Tiyasha Banerjee
 - Zhan Lou
 - Chia-Le Luan
-- Ying Zhong
+- Ying Zhong (prompt engineering)
 
 With guidance from **Professor Francesco Cafaro**.
 
